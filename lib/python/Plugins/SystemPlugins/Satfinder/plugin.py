@@ -297,7 +297,7 @@ class Satfinder(ScanSetup, ServiceScan):
 						fec = self.scan_sat.fec.value
 
 					if self.scan_sat.t2mi_pid.value > 0 and self.scan_sat.t2mi_plp.value >= 0:
-						t2mi_plp_id = (self.scan_sat.t2mi_pid.value<<16)&self.scan_sat.t2mi_plp.value
+						t2mi_plp_id = (self.scan_sat.t2mi_pid.value<<16)|self.scan_sat.t2mi_plp.value
 					else:
 						t2mi_plp_id = eDVBFrontendParametersSatellite.No_T2MI_PLP_Id
 						
