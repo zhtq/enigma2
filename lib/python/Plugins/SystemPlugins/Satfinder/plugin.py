@@ -376,7 +376,7 @@ class Satfinder(ScanSetup, ServiceScan):
 					self.transponder[9], # pilot
 					self.transponder[10],# input stream id
 					self.transponder[11],# pls mode
-					self.transponder[12] # pls code
+					self.transponder[12], # pls code
 					self.transponder[13] # t2mi_plp_id
 				)
 		elif nim.isCompatible("DVB-T"):
